@@ -1,0 +1,15 @@
+x = 1
+y = 2
+
+
+def setup():
+    size(600,400)
+def draw():
+    global x,y
+    translate(300,200)
+    rotate(radians(x))
+    background(25)
+    fill(random(250),random(250),random(250))
+    ellipse(x,x,80,80)
+    x = x + 1
+    y = y + 2
