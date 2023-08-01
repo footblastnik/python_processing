@@ -1,0 +1,49 @@
+bot = telebot.TeleBot('6522085632:AAE3YvrKeaLWUUv8HDbCKqSyCV178OmhGzw')
+capital = ['Россия', 'Америка', 'Испания' ,'Англия', 'Камерун', 'Египет', 'Франция', 'Аруба', 'Афганистан']
+  
+uses = []
+pred = '@'
+
+@bot.message_handler(content_types=['text'])
+                                                                                               
+def get_text_messages(message):
+                     
+    global pred,uses,capital
+    flag = False
+    body = message.text
+
+    
+   
+    if body not in uses and body[0].lower() == pred[-1] or pred == '@':
+        uses.append(body)
+        for x in capital:
+            if x[0].lower() == body[-1]:
+                flag = True
+                bot.send_message(message.from_user.id, x)
+                capital.remove(x)
+                pred = x
+                uses.append(x)
+                
+        if flag == False:
+                bot.send_message(message.from_user.id, "Ты победил")
+                uses = []
+                pred = '@'
+                
+    #else:
+        #bot.send_message(message.from_user.id, "Так не по правилам.")
+ 
+    flag = False
+    if message.text == "Подсказка" or message.text == "подсказка":
+        bot.send_message(message.from_user.id, "Сейчас подскажу")
+        bot.send_message(message.from_user.id, uses[-1])
+        for x in capital:
+            if x[0].lower() == uses[-1]:
+                flag = True
+                bot.send_message(message.from_user.id, x)
+                capital.remove(x)
+                pred = x
+                uses.append(x)
+        if flag == False:
+            message.text == "Такой страны нет"
+            
+bot.polling(none_stop=True, interval=0)
