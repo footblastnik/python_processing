@@ -1,11 +1,17 @@
 import telebot
+
 bot = telebot.TeleBot('6522085632:AAE3YvrKeaLWUUv8HDbCKqSyCV178OmhGzw')
-questions = ["Кто выйграл чемпионат мира по футболу в 2018 году?",'Кто стал лучшим бомбардиром на чемпионате мира в 2022 году?']
-answ = [['франция', "Англия", "Хорватия", "Аргентина"],
-          ['Мбаппе', "Месси", "Роналду", "Кейн"]]
+questions = ["Кто выйграл  чемпионат мира по футболу в 2018 году?",'Кто стал лучшим бомбардиром на чемпионате мира в 2022 году?','Кто выйграл золотой мяч в 2015 году?','В каком году Марсело перешел в Реал Мадрид?']          
+answ = [['Англия', "франция", "Хорватия", "Аргентина"],
+          ['Мбаппе', "Месси", "Роналду", "Кейн"],
+          ['Месси', "Роналду", "Неймар", "Левандовски"],
+          ['2010', "2012", "2007", "2009"]]
+
+
+             
+right = [2, 1, 1]
 lives = 3
 heart_symbol = u'\u2764'
-right = [1 , 1]
 money = 100
 i = 0
 #pred = '@'
@@ -22,7 +28,7 @@ def get_text_messages(message):
               money *= 2
               mess = 'Ваш выигрыш: ' + str(money)
               bot.send_message(message.from_user.id, mess)
-          if i == 3:              
+          if i == 4:              
              bot.send_message(message.from_user.id, 'Игра окончена')
              i = 0
           mess = questions[i]+'\n'+'1.'+answ[i][0]+'\n'+\
@@ -46,3 +52,5 @@ def get_text_messages(message):
             bot.send_message(message.from_user.id, "Вы проиграли")
                 
 bot.polling(none_stop=True, interval=0)
+
+
