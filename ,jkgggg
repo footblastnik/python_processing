@@ -1,0 +1,72 @@
+import telebot
+
+bot = telebot.TeleBot('6522085632:AAE3YvrKeaLWUUv8HDbCKqSyCV178OmhGzw')
+questions = ["Кто выйграл  чемпионат мира по футболу в 2018 году?",'Кто стал лучшим бомбардиром на чемпионате мира в 2022 году?','Кто выйграл золотой мяч в 2015 году?','В каком году Марсело перешел в Реал Мадрид?']          
+answ = [['Англия', "франция", "Хорватия", "Аргентина"],
+          ['Мбаппе', "Месси", "Роналду", "Кейн"],
+          ['Месси', "Роналду", "Неймар", "Левандовски"],
+          ['2010', "2012", "2007", "2009"]]
+
+
+             
+right = [2, 1, 1, 3]
+lives = 3
+heart_symbol = u'\u2764'
+money = 100
+i = 0
+#pred = '@'
+   #keyrboard
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    item1 = types.KeyboardButton("викорина")
+    item2 = types.KeyboardButton("интересные факты")
+    markup.add(item1, item2)
+    bot.send_message(message.chat.id,reply_markup=markup)
+    body = message.text
+@bot.message_handler(content_types=['text'])
+def lalala(message):
+    if message.chat.type == 'private':
+        if message.text == 'Викторина':
+             bot.send_message(message.chat.id,'gggg')
+   
+           
+        elif mesasage.text == 'Интересные факты о игроках Реал Мадрида':
+            bot.send_message(message.chat.id,'Винисиус', 'Его кумир Робинье')
+        else:
+            bot.send_message(message.chat.id, 'Я не знаю что ответить')
+def get_text_messages(message):
+    global i , money, lives, heart_symbol ,x       
+    
+    #if lives > 0:
+        #if
+    
+    if i == 0 or body == str(right[i-1]):
+          if i != 0:
+              money *= 2
+              mess = 'Ваш выигрыш: ' + str(money)
+              bot.send_message(message.from_user.id, mess)
+          if i == 4:              
+             bot.send_message(message.from_user.id, 'Игра окончена')
+             i = 0
+       
+          mess = questions[i]+'\n'+'1.'+answ[i][0]+'\n'+\
+                                  '2.'+answ[i][1]+'\n'+\
+                                          '3.'+answ[i][2]+'\n'+\
+                                          '4.'+answ[i][3]+'\n'+\
+                                          'Ответ пишется цифрой'
+          bot.send_message(message.from_user.id, mess)
+          i += 1
+          
+          #   mess += str(x) +' '
+          #bot.send_message(message.from_user.id, mess)
+          #mess = "Осталось жизней: " + heart_symbol * lives
+          #bot.send_message(message.from_user.id, mess)
+    else:
+        if lives != 1:
+            lives -= 1
+            bot.send_message(message.from_user.id, "Неправильно вы теряете одну жизнь" + heart_symbol * lives)
+            
+        else:
+            bot.send_message(message.from_user.id, "Вы проиграли")
+                
+bot.polling(none_stop=True, interval=0)
+
