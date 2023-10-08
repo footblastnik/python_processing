@@ -1,0 +1,108 @@
+#import time
+#time.sleep(1)
+#print("Сработало")
+'''
+import pyautogui
+import time
+'''
+'''
+time.sleep(2)
+pyautogui.hotkey("winleft","d")
+time.sleep(2)
+pyautogui.moveTo(300,600)
+pyautogui.doubleClick()
+
+'''
+'''
+import pyautogui
+print(pyautogui.position())
+'''
+'''
+import pyautogui
+import time
+time.sleep(2)
+pyautogui.hotkey("winleft","r")
+time.sleep(2)
+pyautogui.write("notepad")Блокнот
+
+time.sleep(2)
+pyautogui.press("enter")
+'''
+'''
+import pyautogui
+import time
+
+import keyboard
+time.sleep(2)
+pyautogui.press("winleft")
+time.sleep(2)
+keyboard.write("Блокнот")
+time.sleep(2)
+pyautogui.press("enter")
+'''
+'''
+import pyautogui as pg
+import time as t
+import keyboard as kb
+t.sleep(2)
+pg.press("winleft")
+t.sleep(2)Блокнот
+
+kb.write("Блокнот")
+t.sleep(2)
+pg.press("enter")
+'''
+'''
+import pyautogui 
+import time
+import keyboard
+pyautogui.hotkey("winleft","d")
+time.sleep(2)
+pyautogui.click()
+'''
+'''
+import pyautogui 
+import time
+import keyboard
+time.sleep(1)
+keyboard.write("10")
+time.sleep(1)
+keyboard.write("9")
+time.sleep(1)
+keyboard.write("8")
+time.sleep(1)
+keyboard.write("7")
+time.sleep(1)
+keyboard.write("6")
+time.sleep(1)
+keyboard.write("5")
+time.sleep(1)
+keyboard.write("4")
+time.sleep(1)
+keyboard.write("3")
+time.sleep(1)
+keyboard.write("2")
+time.sleep(1)
+keyboard.write("1")
+time.sleep(1)
+keyboard.write("бум!!!")
+
+pyautogui.hotkey("winleft","r")
+time.sleep(2)
+pyautogui.write("notepad")
+
+
+time.sleep(2)
+pyautogui.press("enter")10987654321бум
+'''
+import pyautogui 
+import time
+import keyboard
+
+pyautogui.hotkey("winleft")
+pyautogui.mouseDown(0,20)
+pyautogui.hotkey("winleft","d")
+
+pyautogui.click(40,60)
+
+
