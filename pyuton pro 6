@@ -1,0 +1,50 @@
+'''
+import pyautogui
+parol = input("Введите пароль: ")
+login = input("введите логин: ")
+if parol == "1234" and login == "yandex.ru":
+    pyautogui.alert("секретная информация")
+if parol != "1234" and login != "yandex.ru":
+    pyautogui.alert("пароль и логин неверен")
+if parol != "1234" and login == "yandex.ru":    
+    pyautogui.alert("пароль неверен")
+if parol == "1234" and login != "yandex.ru":    
+    pyautogui.alert("логин неверен")
+'''
+'''
+import pyautogui
+imi = input("Введите имя: ")
+famili = input("введите фамилию: ")
+rost = int(input("введите возраст: "))
+if imi != "Микордий" and famili != "Пармезанов" and rost >= 17:  
+    pyautogui.alert("вы вступили в клуб")
+if imi == "Микордий" and famili == "Пармезанов" and rost >= 17:  
+    pyautogui.alert("вы в черном списке")
+if imi != "Микордий" and famili != "Пармезанов" and rost <= 17:  
+    pyautogui.alert("вы слишком маленький")
+if imi == "Микордий" and famili =! "Пармезанов" and rost >= 17:  
+    pyautogui.alert("вы в черном списке")
+'''
+'''
+import pyautogui
+import time
+
+time.sleep(3)
+print(pyautogui.position())
+'''
+
+import pyautogui
+
+temperatyra = int(input("Введите температуру: "))
+vlaga = int(input("введите влажность: "))
+pyautogui.hotkey('win', 'd')
+pyautogui.doubleClick(1345,559) 
+if temperatyra <= 10  and vlaga >= 60:
+    pyautogui.hotkey('win', 'd')
+    pyautogui.moveTo(516, 1062)
+    pyautogui.doubleClick()
+if temperatyra >= 30  and vlaga <= 30:
+    pyautogui.hotkey('winleft', 'd')
+    pyautogui.moveTo(516, 1062)
+    pyautogui.doubleClick()
+
