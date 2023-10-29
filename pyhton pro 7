@@ -1,0 +1,52 @@
+'''
+parol = input("показать или изменить: ")
+
+f = open('data.txt', 'r', encoding="utf-8")
+if parol == "показать":
+    
+    
+   f = open('data.txt', 'r', encoding="utf-8")
+   str1 = f.readline().strip()
+   print("Сейчас текст в файле такой:", str1)
+   f.close()
+
+   
+
+
+if parol == "изменить":
+   f = open('data.txt', 'w', encoding="utf-8")
+   str2 = input("Введите новый текст файла: ")
+   f.write(str2)
+   f.close()
+   '''
+'''
+parol = int(input("деньги: "))
+pribavit = int(input("число: "))
+f = open('data.txt', 'r', encoding="utf-8")
+if parol == "показать сколько денег" and pribavit = 0:
+   f = open('data.txt', 'r', encoding="utf-8")
+   str1 = f.readline().strip()
+   print("Сейчас вот столько денег:", str1)
+   f.close()
+if parol + pribavit:
+    
+   f = open('data.txt', 'w', encoding="utf-8")
+   str2 = int(input("parol + pribavit: "))
+   f.write(str2)
+   f.close()
+'''
+parol = input("Введите команду (прибавить): ")
+#pribavit = int(input("число"))
+f = open('data.txt', 'r', encoding="utf-8")
+if parol == "показать":
+   str1 = f.readline().strip()
+   print("Сейчас денег в файле столько:", str1)
+
+
+if parol == "снять":
+   f = open('data.txt', 'w', encoding="utf-8")
+   str2 = input("parol + pribavit")
+   f.write(str2)
+f.close()
+
+
