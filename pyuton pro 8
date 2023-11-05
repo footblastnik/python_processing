@@ -1,0 +1,45 @@
+'''
+import pyautogui
+parol = input("Введите пароль: ")
+login = input("введите логин: ")
+if parol == "1234" and login == "yandex.ru":
+   
+    pyautogui.alert("Успешный вход.Добро пожаловать, {login}!\n")
+                    
+    
+else: 
+    pyautogui.alert("пароль и логин неверен")
+    '''
+    
+'''
+import pyautogui
+ves = int(input("Введите вес (прибавить): "))
+
+if ves < 10:
+   pyautogui.alert("Принято, вес не превышает нормы")
+
+
+else:
+   pyautogui.alert(ves - 10,"надо убрать")
+   '''
+'''
+name = input("введите Фамилию,имя,отчество ")
+vitamin = int(input("сколько витамина D"))
+uod = int(input("сколько йода мкг/л"))
+if vitamin >= 30 and uod >= 30:
+    print("Ваш показатель витамина D {показатель} в норме")
+    print("Ваш показатель йода {показатель} в норме")
+else:
+    print("Ваш показатель витамина D {показатель} ниже нормы")
+    print("Ваш показатель йода {показатель} ниже нормы")
+    '''
+'''
+import pyautogui
+datcik1 = int(input("первый датчик: "))
+datcik2 = int(input("второй датчик: "))
+datcik3 = int(input("третий датчик: "))   
+if  datcik1 >= 0 or datcik2 >= 0 or datcik3 >= 0:
+    pyautogui.alert("ОПАСНОСТЬ!ТАЯНИЕ ЛЬДОВ!")
+else:
+    pyautogui.alert("Температура в норме")
+    '''
