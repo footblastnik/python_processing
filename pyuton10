@@ -1,0 +1,8 @@
+umi = input("Введите имя и фамилию : ")
+#pribavit = int(input("число"))
+
+f = open('data.txt', 'r', encoding="utf-8")
+black_lives = f.readline().strip()
+if umi == black_lives:
+    print("вы в черном списке")
+   
