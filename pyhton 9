@@ -1,0 +1,10 @@
+f = open('data.txt', 'r', encoding="utf-8")
+name =  f.readline()
+f = open('data1.txt', 'r', encoding="utf-8")
+name1 =  f.readline()
+f = open('data2.txt', 'w', encoding="utf-8")
+
+
+
+f.write(name + name1)
+f.close()
