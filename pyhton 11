@@ -1,0 +1,87 @@
+#login = input("Введите логин")
+#parol = input("Введите пароль")
+#if login == "yandex.ru" and parol == "1587":
+    #print("пароль и логин верны")
+#elif login != "yandex.ru" and parol == "1587":
+    #print("логин неверен")
+#elif login == "yandex.ru" and parol != "1587":
+    #print("пароль неверен")
+#else:
+    #print("пароль и логин неверен")
+'''
+summa = int(input("Введите сумму"))
+if summa < 1000:
+    print("скидки нет")
+elif summa > 1000 and summa < 5000:
+    print(summa/100*5)
+    print("ваша скидка")
+elif summa > 5001 and summa < 10000:
+    print(summa/100*10)
+    print("ваша скидка")
+elif summa > 10001:
+    print(summa/100*15)
+    print("ваша скидка")
+    '''
+'''
+cnaki = input("Введите знак")
+summa = int(input("Введите сумму"))
+summa1 = int(input("Введите сумму"))
+if cnaki == "+":
+    print(summa + summa1)
+elif cnaki =="-":
+    print(summa - summa1)
+elif cnaki =="/":
+    print(summa / summa1)
+elif cnaki =="*":
+    print(summa * summa1)
+else:
+    print("неизвестная команда")
+    '''
+'''
+age = int(input(" Введите возраст"))
+if age > 20 and age < 25:
+    name = input(" Введите имя")
+    surname = input(" Введите фамилию")
+    print(name,surname +   "Даже в таком молодом возрасте нужно заботиться о здоровье!")
+elif age > 35 and age < 40:
+    name = input(" Введите имя")
+    surname = input(" Введите фамилию")
+    print(name,surname +   " Не дожидайтесь, когда болезни атакуют в самый неподходящий момент!")
+elif age > 55 and age < 60:
+    name = input(" Введите имя")
+    surname = input(" Введите фамилию")
+    print(name,surname +   " Проверьте свой организм на наличие мин замедленного действия")
+else:
+    print("Диспансеризация для вашего возраста будет в другом году\nдля этого оформитесь в регистратуре к терапевту")
+    '''
+ 
+
+'''    
+number = int(input("Введите число"))
+if number == 0:
+    print("ноль")
+elif number == 1:
+    print("один")
+elif number == 2:
+    print("два")
+elif number == 3:
+    print("три")
+elif number == 4:
+    print("четыре")
+elif number == 5:
+    print("пять")
+elif number == 6:
+    print("шесть")
+elif number == 7:
+    print("семь")
+elif number == 8:
+    print("восемь")
+elif number == 9:
+    print("девять")
+    '''
+
+
+
+
+    
+
