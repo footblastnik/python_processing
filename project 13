@@ -5,10 +5,10 @@ if team == "анекдот":
 elif team == "сказка на ночь":
     os.startfile("https://deti-online.com/skazki/")
 elif team == "создание заметки":
-    f = open('data.txt', 'r', encoding="utf-8")
+    f = open('data.txt', 'r')
     str3 = f.readline()
     print("Сейчас текст в файле такой:", str3)
-    f = open('data.txt', 'w', encoding="utf-8")
+    f = open('data.txt', 'w')
     str4 = input("Введите новый текст файла: ")
     f.write(str4)
     f.close()
@@ -19,12 +19,12 @@ elif team == "открыть браузер":
 elif team == "смешные картинки":
     os.startfile("https://www.pinterest.com/ludmilaludmila589/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%BE%D0%B4%D0%BD%D1%8F%D1%82%D0%B8%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D1%8F/")
 elif team == "запомнить контакт":
-    f = open('data1.txt', 'r', encoding="utf-8")
+    f = open('data1.txt', 'r')
     str1 = f.read()
     print("Сейчас контакты в файле такие:", str1)
     f.close()
 
-    f = open('data1.txt', 'r', encoding="utf-8")
+    f = open('data1.txt', 'r')
     str2 = input("Введите новый контакт" + str1)
     f.write(str2)
     f.close()
@@ -54,4 +54,5 @@ elif team == "котенок":
     print("  (           )")
     print(" ( (  )   (  ) )")
     print("(__(__)___(__)__)")
-    
+else:
+    print("такой команды нет")
