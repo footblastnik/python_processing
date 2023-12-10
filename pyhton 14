@@ -1,0 +1,42 @@
+'''
+team = input("    введите команду")
+if team == "покупки":
+    f = open('data.txt', 'r')
+    str1 = f.readline().strip()
+    print("Сейчас текст в файле такой:", str1)
+    f.close()
+
+    f = open('data.txt', 'w')
+    str2 = input("Введите новый текст файла: ")
+    f.write(str2)
+    f.close()
+elif team == "задачи":
+    f = open('data1.txt', 'r')
+    str3 = f.readline().strip()
+    print("Сейчас текст в файле такой:", str3)
+    f.close()
+
+    f = open('data1.txt', 'w')
+    str4 = input("Введите новый текст файла: ")
+    f.write(str4)
+    f.close()
+elif team == "цели":
+   f = open('data2.txt', 'r')
+   str5 = f.readline().strip()
+   print("Сейчас текст в файле такой:", str5)
+   f.close()
+
+   f = open('data2.txt', 'w')
+   str6 = input(" Введите новый текст файла: ")
+   f.write(str6)
+   f.close()
+   '''
+weight = int(input("введите вес багажа"))
+if weight <= 25:
+    print("проходите")
+elif weight >= 25:
+    print("доплатите 330")
+    agree = input("согласны?")
+    if agree == "Да":
+        
+        
