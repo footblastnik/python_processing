@@ -1,0 +1,23 @@
+'''
+weight = int(input("введите вес багажа"))
+if weight <= 25:
+    print("проходите")
+elif weight >= 25:
+    print("доплатите ")
+    agree = input("согласны?")
+    if agree == "Да":
+        weight1 = int(input("введите вес багажа"))
+        print((weight1 - 25)*330)
+        print("вот столько нужно доплатить")
+    elif agree == "Нет":
+        print("вызываем администратора")
+        '''
+'''
+mobile_tarif = int(input("введите команду"))
+if mobile_tarif == 1:
+    print("тариф(1), баланс(2), подключённые услуги(3) или отменить(0)")
+    servises = int(input("выберити число"))
+    '''
+parol == int(input("введите пароль"))
+    
+
