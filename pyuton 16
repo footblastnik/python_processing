@@ -1,0 +1,37 @@
+'''
+parol = input("введите пароль: ")
+while parol != "1234as":
+    parol = input("пароль неверен,попробуйе еще")
+print("проходите")
+'''
+'''
+login = input("введите логин: ")
+while login != "nm.ru":
+    login = input("логин неверен,попробуйе еще")
+print("теперь пароль")
+parol = input("введите пароль: ")
+while parol != "1234as":
+    parol = input("пароль неверен,попробуйе еще")
+print("проходите")
+'''
+'''
+login = input("введите логин: ")
+parol = input("введите пароль: ")
+while login != "nm.ru" or parol != "1234as":
+    print("логин или пароль неверен")
+    login = input("введите логин: ")
+    parol = input("введите пароль: ")
+print("проходите")
+'''
+'''
+commanda = input("")
+while commanda != "стоп":
+    if commanda == "супергерой":
+        print("самый лучший-Бетмэн")
+    elif commanda == "модная одежда":
+        print("самая лучшая книга-это война и мир")
+    else:
+        print("Нет,не верно")
+    commanda = input("")
+print("все")
+    '''
