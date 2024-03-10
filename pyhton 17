@@ -1,0 +1,75 @@
+'''
+summa = 0
+vvod = input("Введите целое число или слово «стоп»: ")
+while vvod != "стоп":
+    num = int(vvod)
+    summa = summa + num
+    vvod = input("Введите целое число или слово «стоп»: ")
+    
+
+print("Сумма чисел:", summa)
+'''
+'''
+f = 1
+while f <=10:
+    print(f)
+    f = f + 1
+print("djn b gjcxbnfkb kj 10")
+'''
+'''
+summa = 0
+vvod = input("Введите целое число или слово «стоп»: ")    
+
+while vvod != "стоп":
+    
+    num = int(vvod)
+    summa = summa + num
+   
+    vvod = input("Введите целое число или слово «стоп»: ")
+print(summa / num)
+'''
+'''
+summa = 0
+kolvo = int(input("Введите количество»: "))
+i = 0
+while kolvo > i:
+    
+    apple = int(input("введите вес яблока"))
+   
+    #kolvo = input("Введите целое число или слово «стоп»: ")
+    
+if kolvo >=150 and kolvo <=200:
+    summa = summa + apple
+    print(summa)   
+else:
+    i = i + 1
+    
+    pass
+'''
+        
+        #num    
+'''
+num = input("Введите целое число: ")
+popitka = 2
+while num != "45":
+    if num <= "45":
+        print("число больше")
+        num = input("не правильно: ")
+        popitka -= 1
+        #print("у вас потрачена попытка")
+    elif num >="45":
+        print("число меньше")
+    
+        num = input("не правильно: ")
+        popitka -= 1
+        #print("у вас потрачена попытка")
+    if popitka == 0:
+        break
+    
+else:    
+    print("правильно")
+    '''
+    
+    
+    
+    
