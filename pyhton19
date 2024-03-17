@@ -1,0 +1,44 @@
+'''
+marks = 0
+for marksa in 1,2,3,4,5,6:
+    marksa += int(input())
+print(marksa/6)
+'''
+'''
+slovo = 0
+for slovoa in "манго","Geometry Dash","Geometry Dash":    
+    if slovoa == "Geometry Dash":
+
+        slovo = slovo + 1
+print(slovo)
+'''
+'''
+imena = 0
+for slovoa in "Торетто","Джек Воробей","Русалочка":    
+    if slovoa == "Джек Воробей":
+        print("Минуточку, КАПИТАН Джек Воробей!")
+
+print(imena)
+'''
+'''
+zagadano = 6
+
+for popytki in range(3, 0, -1):
+    
+    print("Осталось" + str(popytki) + ' попыток')
+    print("Отгадай число от 0 до 9")
+    num = int(input('Введи число: '))
+    
+    if num > zagadano:
+        print("Не угадал!")
+        print(str(num) + " больше загаданного числа")
+    elif num < zagadano:
+        print(str(num) + " меньше загаданного числа")
+    else:
+        break
+    
+if num != zagadano:
+    print("Попытки кончились!")
+else:
+    print("Угадал!")
+    '''
