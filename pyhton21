@@ -1,0 +1,39 @@
+'''
+import shutil
+for i in range (1,2):
+    print(str(i) + "\data2.txt")
+    shutil.copy("data.txt", str(i) + "\data2.txt")
+    print("готово")
+    '''
+'''
+import shutil
+for i in range (1,3):
+    print(str(i) + "\data2.txt")
+    shutil.copy("data.txt", str(i) + "\data2.txt")
+    print(str(i) + "\data3.txt")
+    shutil.copy("data.txt", str(i) + "\data3.txt")
+    print(str(i) + "\data4.txt")
+    shutil.copy("data.txt", str(i) + "\data4.txt")
+    print(str(i) + "\data5.txt")
+    shutil.copy("data.txt", str(i) + "\data5.txt")
+    print(str(i) + "\data6.txt")
+    shutil.copy("data.txt", str(i) + "\data6.txt")
+    print(str(i) + "\data7.txt")
+    shutil.copy("data.txt", str(i) + "\data7.txt")
+    print("готово")
+    '''
+'''
+import shutil
+import os
+for i in range (1,8):
+    print(str(i) + "\data2.txt")
+    shutil.copy("data.txt", str(i) + "\data2.txt")
+    os.remove(str(i) + "\data2.txt")
+    print("готово")
+    '''
+'''
+import shutil
+
+for i in range(1, 8):
+    with open(str(i)+"\data.txt", "w", encoding="utf-8") as f:
+        f.write(str(i))
