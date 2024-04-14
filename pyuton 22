@@ -1,0 +1,111 @@
+'''
+from PIL import Image 
+image = Image.open("C:/Users/Ученик/Desktop/24.12/img.jpg.jpg")
+image.show()
+'''
+'''
+from PIL import Image
+ 
+image = Image.open("C:/Users/Ученик/Desktop/24.12/img.jpg.jpg")
+new_image = image.resize((100, 100), Image.LANCZOS)
+new_image.save("resized_img.jpg")
+image.close()
+new_image.close()
+'''
+'''
+from PIL import Image
+ 
+image = Image.open("C:/Users/Ученик/Desktop/24.12/img.jpg.jpg")
+image2 = Image.open("C:/Users/Ученик/Desktop/24.12/img.jpg.jpg")
+new_image = image.crop((0, 0, image.width/2, image.height))
+new_image2 = image2.crop((137.5, 0, image.width, image.height))
+#можно так
+#cord = (10, 50, 100, 200)
+#new_image = image.crop(cord)
+new_image.save("cropped_img.jpg")
+new_image2.save("cropped2_img.jpg")
+image.close()
+image2.close()
+new_image.close()
+new_image2.close()
+'''
+'''
+from PIL import Image
+ 
+image = Image.open("C:/Users/Ученик/Desktop/24.12/img.jpg.jpg")
+new_image = image.rotate(180)
+new_image.save("rotated_img.jpg")
+image.close()
+new_image.close()
+'''
+'''
+#задание-1
+from PIL import Image
+ 
+image = Image.open("C:/Users/Ученик/Desktop/24.12/img.jpg.jpg")
+image2 = Image.open("C:/Users/Ученик/Desktop/24.12/imgg.jpg")
+new_image = image.resize((150, 150), Image.LANCZOS)
+new_image2 = image2.resize((150, 150), Image.LANCZOS)
+new_image.save("icon_img.jpg")
+new_image2.save("icon1_img.jpg")
+image.close()
+image2.close()
+new_image.close()
+new_image2.close()
+'''
+'''
+from PIL import Image
+ 
+image = Image.open("C:/Users/Ученик/Desktop/24.12/img.jpg.jpg")
+print("Ширина:", image.width)
+print("Высота:", image.height)
+print("Название:", image.filename)
+image.close()
+'''
+'''
+from PIL import Image
+ 
+image = Image.open("C:/Users/Ученик/Desktop/24.12/img.jpg.jpg")
+new_image = image.resize((1000, 100), Image.LANCZOS)
+new_image.save("resized_img.jpg")
+image.close()
+new_image.close()
+'''
+'''
+#задание-2
+from PIL import Image
+ 
+image = Image.open("C:/Users/Ученик/Desktop/24.12/img.jpg.jpg")
+image2 = Image.open("C:/Users/Ученик/Desktop/24.12/img.jpg.jpg")
+new_image = image.crop((0, 0, image.width/2, image.height))
+new_image2 = image2.crop((137.5, 0, image.width, image.height))
+#можно так
+#cord = (10, 50, 100, 200)
+#new_image = image.crop(cord)
+new_image.save("cropped_img.jpg")
+new_image2.save("cropped2_img.jpg")
+image.close()
+image2.close()
+new_image.close()
+new_image2.close()
+'''
+'''
+from PIL import Image
+ 
+image = Image.open("C:/Users/Ученик/Desktop/24.12/img.jpg.jpg")
+image2 = Image.open("C:/Users/Ученик/Desktop/24.12/imgg.jpg.jpg")
+image3 = Image.open("C:/Users/Ученик/Desktop/24.12/imggg.jpg.jpg")
+
+new_image = image.resize((183, image.height), Image.LANCZOS)
+new_image2 = image2.resize((183, image.height), Image.LANCZOS)
+new_image3 = image3.resize((183, image.height), Image.LANCZOS)
+new_image.save("icon_img.jpg")
+new_image2.save("icon1_img.jpg")
+new_image3.save("icon2_img.jpg")
+image.close()
+image2.close()
+image3.close()
+new_image.close()
+new_image2.close()
+new_image3.close()
+'''
