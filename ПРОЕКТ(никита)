@@ -1,0 +1,139 @@
+from PIL import Image
+import random
+import os
+import segno
+team = input("вас приветствует бот про Реал Мадрида,чтоб начать напишите(start)")
+if team == "start":
+    start = int(input("поиграем в игру(1),узнать иформацию о игроках(2),картинки(3),кюаркод тгк канала Реал мадрида(4)"))
+    if start == 1:
+        score = 0
+        for i in range(3):
+            print(i)
+            print("кто забил больше всего голов за реал мадрид")
+            print("Родриго","Винисиус","Беллингем")
+            c = input()
+            if c == "Беллингем":
+                print("Ответ верный!")
+                score += 1
+            else:
+                print("Ответ неверный")
+                break
+            if score == 1:
+                
+                print("Вы набрали одно очко")
+                print("кто из них англичанин")
+                print("Карвахаль,Беллингем,Гюлер")
+                c = input()
+                if c == "Беллингем":
+                    print("Ответ верный!")
+                    score += 1
+                else:
+                    print("Ответ неверный")
+                    break
+                if score == 2:
+                    print("Вы набрали одно очко")
+                    print("кто из них дольше играет за Реал мадрид")
+                    print("Карвахаль,Модрич,Кросс")
+                    c = input()
+                    if c == "Карвахаль":
+                        print("Ответ верный!")
+                        score += 1
+                    else:
+                        print("Ответ неверный")
+                if score == 3:
+                    print("Вы выйграли")
+                    break                              
+    if start == 2:
+        print("Карвахаль,Гюлер,Винисиус,Беллингем,Родриго,Рюдигер")
+        s = input("выберите игрока про которого хотите узнать информацию")
+        if s == "Карвахаль":
+            os.startfile("https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B2%D0%B0%D1%85%D0%B0%D0%BB%D1%8C,_%D0%94%D0%B0%D0%BD%D0%B8")
+        if s == "Гюлер":
+            os.startfile("https://ru.wikipedia.org/wiki/%D0%93%D1%8E%D0%BB%D0%B5%D1%80,_%D0%90%D1%80%D0%B4%D0%B0")
+        if s == "Винисиус":
+            os.startfile("https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BD%D0%B8%D1%81%D0%B8%D1%83%D1%81_%D0%96%D1%83%D0%BD%D0%B8%D0%BE%D1%80")
+        if s == "Беллингем":
+            os.startfile("https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%BB%D0%B8%D0%BD%D0%B3%D0%B5%D0%BC,_%D0%94%D0%B6%D1%83%D0%B4")
+        if s == "Родриго":
+            os.startfile("https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%BB%D0%B2%D0%B0_%D0%B4%D0%B5_%D0%93%D0%BE%D0%B8%D1%81,_%D0%A0%D0%BE%D0%B4%D1%80%D0%B8%D0%B3%D0%BE")
+        if s == "Рюдигер":
+            os.startfile("https://ru.wikipedia.org/wiki/%D0%A0%D1%8E%D0%B4%D0%B8%D0%B3%D0%B5%D1%80,_%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%B8%D0%BE")
+                
+
+    if start == 3:
+        a = input("повернуть на 90 градусов,изменить размер,обрезать,показать формат?")
+        if a == "повернуть на 90 градусов":
+            b = input("какая картинка,(эмблема)(игроки)?")
+            if b == "эмблема":
+                image = Image.open("C:/Users/Ученик/Desktop/24.12/images.jpg")
+                new_image = image.rotate(90)
+                new_image.save("carleft_img.jpg")
+                image.close()
+                new_image.close()
+            if b == "игроки":
+                image = Image.open("C:/Users/Ученик/Desktop/24.12/1517970784_0_300_5472_3403_600x0_80_0_0_f24ca5a87deb72666b6b94b09291761b.jpg")
+                new_image = image.rotate(90)
+                new_image.save("homeleft_img.jpg")
+                image.close()
+                new_image.close()
+        if a == "изменить размер":
+            b = input("какая картинка?")
+            if b == "эмблема":
+                h = int(input("первый размер"))
+                g = int(input("второй размер"))
+                image = Image.open("C:/Users/Ученик/Desktop/24.12/images.jpg")
+                new_image = image.resize((h, g), Image.LANCZOS)
+                new_image.save("resizecar_img.jpg")
+                image.close()
+                new_image.close()
+            if b == "игроки":
+            
+                h = int(input("первый размер"))
+                g = int(input("второй размер"))
+                image = Image.open("C:/Users/Ученик/Desktop/24.12/1517970784_0_300_5472_3403_600x0_80_0_0_f24ca5a87deb72666b6b94b09291761b.jpg")
+                new_image = image.resize((h, g), Image.LANCZOS)
+                new_image.save("resizecar_img.jpg")
+                image.close()
+                new_image.close()
+        if a == "обрезать":
+        
+            b = input("какая картинка?")
+            if b == "эмблема":
+                h = int(input("на сколько обрезать первый размер"))
+                g = int(input("на сколько обрезать второй размер"))
+                p = int(input("на сколько обрезать третий размер"))
+                r = int(input("на сколько обрезать четвертый размер"))
+                image = Image.open("C:/Users/Ученик/Desktop/24.12/images.jpg")
+                new_image = image.crop((h,g,p,r))
+                new_image.save("croppedd_img.jpg")
+                image.close()
+                new_image.close()
+
+   
+            if b == "игроки":
+                h = int(input("на сколько обрезать первый размер"))
+                g = int(input("на сколько обрезать второй размер"))
+                p = int(input("на сколько обрезать третий размер"))
+                r = int(input("на сколько обрезать четвертый размер"))
+                image = Image.open("C:/Users/Ученик/Desktop/24.12/1517970784_0_300_5472_3403_600x0_80_0_0_f24ca5a87deb72666b6b94b09291761b.jpg")
+                new_image = image.crop((h,g,p,r))
+                new_image.save("cropped_img.jpg")
+                image.close()
+                new_image.close()
+        if a == "показать формат":
+            b = input("какая картинка?")
+            if b == "эмблема":
+                image = Image.open("C:/Users/Ученик/Desktop/24.12/images.jpg")
+                print("Ширина:", image.width)
+                print("Высота:", image.height)
+                print("Название:", image.filename)
+                image.close()
+            if b == "игроки":
+                image = Image.open("C:/Users/Ученик/Desktop/24.12/1517970784_0_300_5472_3403_600x0_80_0_0_f24ca5a87deb72666b6b94b09291761b.jpg")
+                print("Ширина:", image.width)
+                print("Высота:", image.height)
+                print("Название:", image.filename)
+    if start == 4:
+            qr = segno.make_qr("https://t.me/realmadridcdf")
+            qr.save("qr.png")
+            qr.show()
