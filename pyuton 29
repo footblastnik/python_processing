@@ -1,0 +1,209 @@
+'''
+from PIL import Image
+a = input("направо на 90 градусов,налево на 90 градусов,вверх ногами?")
+
+if a == "направо на 90 градусов":
+    image = Image.open("C:/Users/Ученик/Desktop/24.12/icon1_img.jpg")
+    new_image = image.rotate(240)
+    new_image.save("carright_img.jpg")
+    image.close()
+    new_image.close()
+elif a == "налево на 90 градусов":
+    image = Image.open("C:/Users/Ученик/Desktop/24.12/icon1_img.jpg")
+    new_image = image.rotate(90)
+    new_image.save("carleft_img.jpg")
+    image.close()
+    new_image.close()
+elif a == "вверх ногами":
+    image = Image.open("C:/Users/Ученик/Desktop/24.12/icon1_img.jpg")
+    new_image = image.rotate(180)
+    new_image.save("up_img.jpg")
+    image.close()
+    new_image.close()
+'''
+'''
+from PIL import Image
+a = input("направо на 90 градусов,налево на 90 градусов,вверх ногами?")
+while a!= "стоп":
+if a == "повернуть на 90 градусов":
+    b = input("какая картинка?")
+    if b == "спорткар":
+        image = Image.open("C:/Users/Ученик/Desktop/24.12/icon1_img.jpg")
+        new_image = image.rotate(90)
+        new_image.save("carleft_img.jpg")
+        image.close()
+        new_image.close()
+    if b == "дом":
+        image = Image.open("C:/Users/Ученик/Desktop/24.12/home.jpg")
+        new_image = image.rotate(90)
+        new_image.save("homeleft_img.jpg")
+        image.close()
+        new_image.close()
+if a == "изменить размер":
+    b = input("какая картинка?")
+    if b == "спорткар":
+        h = int(input("первый размер"))
+        g = int(input("второй размер"))
+        image = Image.open("C:/Users/Ученик/Desktop/24.12/icon1_img.jpg")
+        new_image = image.resize((h, g), Image.LANCZOS)
+        new_image.save("resizecar_img.jpg")
+        image.close()
+        new_image.close()
+    if b == "дом":
+        
+        h = int(input("первый размер"))
+        g = int(input("второй размер"))
+        image = Image.open("C:/Users/Ученик/Desktop/24.12/home.jpg")
+        new_image = image.resize((h, g), Image.LANCZOS)
+        new_image.save("resizecar_img.jpg")
+        image.close()
+        new_image.close()
+if a == "обрезать":
+    b = input("какая картинка?")
+    if b == "спорткар":
+        h = int(input("на сколько обрезать первый размер"))
+        g = int(input("на сколько обрезать второй размер"))
+        p = int(input("на сколько обрезать третий размер"))
+        r = int(input("на сколько обрезать четвертый размер"))
+        image = Image.open("C:/Users/Ученик/Desktop/24.12/icon1_img.jpg")
+        new_image = image.crop((h,g,p,r))
+        new_image.save("cropped_img.jpg")
+        image.close()
+        new_image.close()
+
+   
+    if b == "дом":
+        h = int(input("на сколько обрезать первый размер"))
+        g = int(input("на сколько обрезать второй размер"))
+        p = int(input("на сколько обрезать третий размер"))
+        r = int(input("на сколько обрезать четвертый размер"))
+        image = Image.open("C:/Users/Ученик/Desktop/24.12/home.jpg")
+        new_image = image.crop((h,g,p,r))
+        new_image.save("cropped_img.jpg")
+        image.close()
+        new_image.close()
+if a == "показать формат":
+    b = input("какая картинка?")
+    if b == "спорткар":
+        image = Image.open("C:/Users/Ученик/Desktop/24.12/img.jpg.jpg")
+        print("Ширина:", image.width)
+        print("Высота:", image.height)
+        print("Название:", image.filename)
+        image.close()
+    if b == "дом":
+        image = Image.open("C:/Users/Ученик/Desktop/24.12/home.jpg")
+        print("Ширина:", image.width)
+        print("Высота:", image.height)
+        print("Название:", image.filename)
+print("вы закончили")
+'''
+'''
+from PIL import Image
+import shutil
+
+for i in range (1,3):
+    print(str(i) + "\C:/Users/Ученик/Desktop/24.12/png1.jpg")
+    shutil.copy("C:/Users/Ученик/Desktop/24.12/png2.jpg", str(i) + "\C:/Users/Ученик/Desktop/24.12/png1.jpg")
+    print(str(i) + "\data3.txt")
+    shutil.copy("C:/Users/Ученик/Desktop/24.12/png2.jpg", str(i) + "\C:/Users/Ученик/Desktop/24.12/png3.jpgt")
+   
+    print("готово")
+'''    
+from PIL import Image
+import random
+team = input("вас приветствует умный бот помощник,выберите команду-картинки и что с ними сделать(a)")
+if team == "b":
+    b = int(input("поиграем в игру 1,2,3"))
+    if b == 1:
+        print("кто забил больше всего голов за реал мадрид")
+        print("Родриго","Винисиус","Беллингем")
+        c = input()
+       
+        while c != "Винисиус":
+            if c == "Беллингем":
+                print("не правильно")
+                break
+            if c == "Родриго":
+                print("не правильно")
+                break
+                
+
+if team == "a":
+    a = input("направо на 90 градусов,налево на 90 градусов,вверх ногами?")
+    if a == "повернуть на 90 градусов":
+        b = input("какая картинка?")
+        if b == "спорткар":
+            image = Image.open("C:/Users/Ученик/Desktop/24.12/icon1_img.jpg")
+            new_image = image.rotate(90)
+            new_image.save("carleft_img.jpg")
+            image.close()
+            new_image.close()
+        if b == "дом":
+            image = Image.open("C:/Users/Ученик/Desktop/24.12/home.jpg")
+            new_image = image.rotate(90)
+            new_image.save("homeleft_img.jpg")
+            image.close()
+            new_image.close()
+    if a == "изменить размер":
+        b = input("какая картинка?")
+        if b == "спорткар":
+            h = int(input("первый размер"))
+            g = int(input("второй размер"))
+            image = Image.open("C:/Users/Ученик/Desktop/24.12/icon1_img.jpg")
+            new_image = image.resize((h, g), Image.LANCZOS)
+            new_image.save("resizecar_img.jpg")
+            image.close()
+            new_image.close()
+        if b == "дом":
+        
+            h = int(input("первый размер"))
+            g = int(input("второй размер"))
+            image = Image.open("C:/Users/Ученик/Desktop/24.12/home.jpg")
+            new_image = image.resize((h, g), Image.LANCZOS)
+            new_image.save("resizecar_img.jpg")
+            image.close()
+            new_image.close()
+    if a == "обрезать":
+        
+        b = input("какая картинка?")
+        if b == "спорткар":
+            h = int(input("на сколько обрезать первый размер"))
+            g = int(input("на сколько обрезать второй размер"))
+            p = int(input("на сколько обрезать третий размер"))
+            r = int(input("на сколько обрезать четвертый размер"))
+            image = Image.open("C:/Users/Ученик/Desktop/24.12/icon1_img.jpg")
+            new_image = image.crop((h,g,p,r))
+            new_image.save("cropped_img.jpg")
+            image.close()
+            new_image.close()
+
+   
+        if b == "дом":
+            h = int(input("на сколько обрезать первый размер"))
+            g = int(input("на сколько обрезать второй размер"))
+            p = int(input("на сколько обрезать третий размер"))
+            r = int(input("на сколько обрезать четвертый размер"))
+            image = Image.open("C:/Users/Ученик/Desktop/24.12/home.jpg")
+            new_image = image.crop((h,g,p,r))
+            new_image.save("cropped_img.jpg")
+            image.close()
+            new_image.close()
+    if a == "показать формат":
+        b = input("какая картинка?")
+        if b == "спорткар":
+            image = Image.open("C:/Users/Ученик/Desktop/24.12/img.jpg.jpg")
+            print("Ширина:", image.width)
+            print("Высота:", image.height)
+            print("Название:", image.filename)
+            image.close()
+        if b == "дом":
+            image = Image.open("C:/Users/Ученик/Desktop/24.12/home.jpg")
+            print("Ширина:", image.width)
+            print("Высота:", image.height)
+            print("Название:", image.filename)
+    
+
+
+    
+   
+    
