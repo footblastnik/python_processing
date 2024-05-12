@@ -1,0 +1,53 @@
+'''
+slova = ["снежок", "пирожок", "СМЕТАААНА","карамель","шины"]
+slova[0] = input("введите слово:")
+slova[4] = input("введите пятое слово слово:")
+print(slova)
+'''
+'''
+slova = ["gta","fifa","mainkraft",]
+for slovo in slova:
+    print(slovo, end=" ") 
+    
+slovo = input("Введите новую игру: ")
+slova.append(slovo)
+
+for slovo in slova:
+    print(slovo, end=" ") 
+slovoo = input("Введите новую игру: ")
+slova.append(slovoo)    
+for slovoo in slova:
+    print(slovoo, end=" ")
+    '''
+'''
+slova = []
+for slovo in slova:
+    print(slovo, end=" ") 
+    
+slovo = input("Добавьте имя: ")
+slova.append(slovo)
+
+for slovo in slova:
+    print(slovo, end=" ") 
+slovoo = input("Добавьте имя: ")
+slova.append(slovoo)    
+for slovoo in slova:
+    print(slovoo, end=" ")
+slovooo = input("Добавьте имя: ")
+slova.append(slovooo)    
+for slovooo in slova:
+    print(slovooo, end=" ")
+slovoooo = input("Добавьте имя: ")
+slova.append(slovoooo)    
+for slovoooo in slova:
+    print(slovoooo, end=" ")
+slovoooo1 = input("Добавьте имя: ")
+slova.append(slovoooo1)    
+for slovoooo1 in slova:
+    print(slovoooo1, end=" ")
+    '''
+'''
+slova = ["кот","лэв","тигр",]
+a = int(input("Какое слово заменить?"))
+if a == 1:
+'''
