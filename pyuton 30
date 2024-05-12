@@ -50,4 +50,12 @@ for slovoooo1 in slova:
 slova = ["кот","лэв","тигр",]
 a = int(input("Какое слово заменить?"))
 if a == 1:
-'''
+    slova[0] = input("введите слово:")
+    print(slova)
+if a == 2:
+    slova[1] = input("введите слово:")
+    print(slova)
+if a == 3:
+    slova[2] = input("введите слово:")
+    print(slova)
+    '''
