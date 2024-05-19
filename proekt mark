@@ -1,0 +1,35 @@
+import time
+import os
+import pyautogui as p
+import shutil
+# Создание файла
+my_file = open("DeadFile.txt", "w")
+path = r'C:\Users\user\Desktop\Virus'
+i = 1
+# Диалог
+a = input("Привет, меня зовут 10000011100100001100001000100000010000111010\nА как тебя?\n")
+if a == "Марк" or a == "10000011100100001100001000100000010000111010" or a == "марк":
+    print("Меня тоже, ладно живи.")
+else:
+    if not os.path.isdir(path):
+        os.mkdir(path)
+    os.chdir(path)
+    print("Твоё имя мне не нравиться, наверно \n.\n.\n.\n.\n.")
+    p.alert(text=":)  умри                                                               ", title="Erorr", button='OK') 
+    # Бесконечный цикл
+    while i < 100:
+        i += 1
+        if i == 52:
+            my_file = open("viRUS" + str(i) + ".txt", "w+")
+            my_file.write("Привет, это код для конца \n09325!")
+            my_file.close()
+        else:
+            my_file = open("viRUS" + str(i) + ".txt", "w+")
+            my_file.write("Привет, я русский вирус!")
+            my_file.close()
+            for step in range(3):
+                s = p.prompt(text="                                                    Вводите код \n                                           Он спрятан в файлах\nНо если ты не найдёшь код то тебе ПРИДЁТСЯ задонит мне в Brawl Stars ", title="viRUS")
+                if s == "09325":
+                    p.alert(text="Ну блина, у, у\nЛадно ты прав :(", title="viRUS")
+                else:
+                    i += 1
