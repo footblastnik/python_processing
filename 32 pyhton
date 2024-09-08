@@ -1,0 +1,30 @@
+'''
+summa = 0
+team = input("")
+while team != "stop":
+    num = int(team)
+    summa = summa + num
+    team = input("")
+
+print(summa/num)
+'''
+'''
+team = input("введите целое число:")
+popitka = 2
+while team != "45":
+    if team < "45":
+        print("число больше")
+        popitka -= 1
+        team = input("не правильно")
+    elif team > "45":
+        print("число меньше")
+        popitka -= 1
+        team = input("не правильно")
+    if popitka == 0:
+        print("вы проиграли")
+        break
+if team == "45":
+    print("вы угадали!!!")
+    '''
+
+
