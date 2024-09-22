@@ -1,0 +1,29 @@
+slovo = [ "*", "#", "/", "#","/","#"]
+a = str(input("напиши куда хочешь пойти"))
+i = 0
+
+while i != 5:
+
+    if a == "вправо" and slovo[i + 1] != '/' and i<4:
+        i = i+1
+        slovo[i] = "*"
+        slovo[i-1] = "#"
+        print(slovo,end="")
+    if a == "прыжок" and slovo[i + 2] != '/' and i<4:
+        i = i+2
+        slovo[i] = "*"
+        slovo[i-2] = "#"
+        print(slovo,end="")
+    
+    
+       
+            
+       
+        
+    a = input("следующий шаг")
+b = print("вы выйграли")
+       
+            
+        
+    
+        
