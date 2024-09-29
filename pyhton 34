@@ -1,0 +1,90 @@
+'''
+slovo = [ "*", "#", "/", "#","/","#"]
+a = str(input("напиши куда хочешь пойти:"))
+i = 0
+
+while i != 5:
+
+    if a == "вправо" and slovo[i + 1] != '/' and i<4:
+        i = i+1
+        slovo[i] = "*"
+        slovo[i-1] = "#"
+        print(slovo,end="")
+    if a == "прыжок" and slovo[i + 2] != '/' and i<4:
+        i = i+2
+        slovo[i] = "*"
+        slovo[i-2] = "#"
+        print(slovo,end="")
+    
+    
+       
+            
+       
+        
+    a = input("следующий шаг")
+b = print("вы выйграли")
+'''
+'''
+sp = [1, 2, -3, 5, -65]
+for i in range(len(sp)):
+    if sp[i] < 0:
+         sp[i] = 0
+         '''
+'''
+sp = []
+for spi in sp:
+    print(spi, end=" ") 
+spi = input("Введите что хотите купить: ")
+sp.append(spi)    
+for spi in sp:
+    print(spi, end=" ") 
+spi = input("Введите что хотите купить: ")
+sp.append(spi)    
+for spiii in sp:
+    print(spiii, end=" ") 
+spiii = input("Введите что хотите купить: ")
+sp.append(spiii)
+if "молоко" in sp:
+    
+    print("Здесь есть слово молоко")
+else:
+    print("молока нет в этом списке")
+    '''
+'''
+sp = ["молоко","масло"]
+a = int(input(" выберете слово из списка?"))
+if a == 1:
+    b = int(input("выберете действие,удалить слово[1],замеить значение[2],оставить слово[3]"))
+    if b == 1:
+        sp.pop(0)
+    if b == 2:
+    '''
+'''
+sp = ["молоко","масло"]        
+for i in range(len(sp)):
+    a = int(input(" выберете слово из списка?"))
+    if a == 1:
+        b = int(input("выберете действие,удалить слово[1],замеить значение[2],оставить слово[3]"))
+        if b == 1:
+            sp.pop(0)
+        if b == 2:
+            sp[0] = input("введите новое слово")
+    if a == 2:
+        b = int(input("выберете действие,удалить слово[1],замеить значение[2],оставить слово[3]"))
+        if b == 1:
+            sp.pop(1)
+        if b == 2:
+            sp[1] = input("введите новое слово")
+            '''
+value = 0
+sp = ["молоко","масло","жувачка","вода"]        
+for i in range(4):
+    a = input(" выберете слово из списка?")
+    if a == "заменить":
+        x = input()
+        sp[value] = x
+        value += 1
+    elif a == "удалить":
+        sp.pop(0)
+    else:
+        value += 1
