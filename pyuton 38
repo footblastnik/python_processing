@@ -1,0 +1,62 @@
+'''
+i = 0
+sp = [["*","*","*"],
+      ["*","*","*"],
+      ["*","*","*"]]
+a = int(input("номер столбца? "))
+while a != "stop":
+#w = int(input("номер строки? "))
+    if a == 1:
+        w = int(input("номер строки? "))
+        i = i+w
+        sp[0][i] = "O"
+        sp[0][i-w] = "*"
+        print(sp,end="")
+    if a == 2:
+        w = int(input("номер строки? "))
+        i = i+w
+        sp[1][i] = "O"
+        sp[1][i-w] = "*"
+        print(sp,end="")
+    if a == 3:
+        w = int(input("номер строки? "))
+        i = i+w
+        sp[2][i] = "O"
+        sp[2][i-w] = "*"
+        print(sp,end="")
+    a = int(input("номер столбца? "))
+    '''
+c = 0
+sp = [["*","*","/","*"],
+      ["*","*","*","*"],
+      ["*","/","*","*"]]
+a = str(input("напиши куда хочешь пойти"))
+i = 0
+while i != 4:
+    
+    if a == "вправо" and sp[i + 1] != '/' and i<3:
+        i = i+1
+        sp[0][i] = "O"
+        sp[0][i-1] = "*"
+        for c in sp:
+            print(c)
+    if a == "прыжок вправо" and sp[i + 2] != '/' and i<3:
+        i = i+2
+        sp[0][i] = "*"
+        sp[i-2] = "#"
+        for c in sp:
+            print(c)
+    if a == "прыжок влево" and sp[i - 2] != '/' and i<3:
+        i = i-2
+        sp[i] = "*"
+        sp[i+2] = "#"
+        for c in sp:
+            print(c)
+    if a == " влево" and sp[i - 1] != '/' and i<3:
+        i = i-1
+        sp[i] = "*"
+        sp[i+1] = "#"
+        for c in sp:
+            print(c)
+     #if a == "вниз" and sp[i - 1] != '/' and i<3:
+        
