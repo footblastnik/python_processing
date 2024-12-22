@@ -1,0 +1,36 @@
+L = ["С Новым годом!","Feliceannonuovo!","HappyNewYear!"]
+L1 = ["Дед Мороз","Баббо Натале","ФазерКристмас"]
+a = input("выбрать страну,добавить нового Деда Мороза:")
+while a != "stop":
+    if a == "выбрать страну":
+        b = input("выберете страну:")
+        if b == "Россия":
+            for i in L:
+                if i == "С Новым годом!":
+                    print(i)
+                    for t in L1:
+                        if t == "Дед Мороз":
+                            print(t)
+        if b == "Италия":
+            for i in L:
+                if i == "Feliceannonuovo!":
+                    print(i)
+                    for t in L1:
+                        if t == "Баббо Натале":
+                            print(t)           
+        if b == "Великобретания":
+            for i in L:
+                if i == "HappyNewYear":
+                    print(i)
+                    for t in L1:
+                        if t == "ФазерКристмас":
+                            print(t)
+    #a = input("выбрать страну,добавить нового Деда Мороза:")
+    if a == "добавить нового Деда Мороза":
+    
+        g = input()
+        L1.append(g)
+        print(L1)
+        
+    
+    a = input("выбрать страну,добавить нового Деда Мороза:")
