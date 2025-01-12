@@ -1,0 +1,64 @@
+'''
+class Slaim:
+   
+    
+    def __init__(self, n, a, d, w):
+        self.name = n
+        self.kg = a
+        self.hage = d
+        self.colour = w 
+    def sravnite(self,human):
+        if self.hage > human.hage:
+            print("Привет, меня зовут",self.name,"я испугался")
+        else:
+            print("Не испугался")
+        
+
+
+human = Slaim("Сергей",2,6,"синий")
+human2 = Slaim("Иркутань",2,5,"красный")
+
+
+human.sravnite(human2)
+'''
+
+class NPC:
+   
+    
+    def __init__(self, n, h, p, x):
+        self.name = n
+        self.hage = h
+        self.profession = p
+        self.xp = x
+    
+    def privetstvije(self):
+        #a = input("Кто вам нужен?(БОЕЦ,МЕХАНИК,ВРАЧ)")
+       
+        print("Здравствуйте, меня зовут",self.name,', мой рост',self.hage,"я работаю",self.profession,"мое здоровье",self.xp )
+        a = input("Кто вам нужен?(БОЕЦ,МЕХАНИК,ВРАЧ)")
+        if self.profession == "БОЕЦ":
+            print(human.privetstvije)
+        if self.profession == "МЕХАНИК":
+            print(human2.privetstvije)
+        if self.profession == "ВРАЧ":
+            print(human3.privetstvije)
+        #a = input("Кто вам нужен?(БОЕЦ,МЕХАНИК,ВРАЧ)")
+        
+
+human.privetstvije = NPC("Сергей",176,"БОЕЦ",75)
+human2.privetstvije = NPC("Иркутань",185,"МЕХАНИК",93)
+human3.privetstvije = NPC("Антон",160,"ВРАЧ",100)
+
+
+
+human.privetstvije()
+human2.privetstvije()
+human3.privetstvije()
+
+a = input("Кто вам нужен?(БОЕЦ,МЕХАНИК,ВРАЧ)")
+if self.profession == "БОЕЦ":
+    print(human.privetstvije)
+if self.profession == "МЕХАНИК":
+        print(human2.privetstvije)
+        ifself.profession == "ВРАЧ":
+            print(human3.privetstvije)
