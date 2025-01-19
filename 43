@@ -1,0 +1,46 @@
+class Student:
+    def __init__(self, p, a, t, n):
+        self.perfomance = p
+        self.number = a
+        self.tele = t
+        self.name = n
+nikita = Student([4,5,5,3],"number","tele","name")
+misha = Student([4,2,3,3],"number","tele","name")
+sum = 0
+#s = input("кого")
+#if s == "nikita":
+for i in nikita.perfomance:
+    sum = sum + i
+print(sum/4)
+sum = 0#if sum > 4.0:
+if sum > 4.0:
+    print("аттестован")
+else:
+    print("не аттестован")
+for g in misha.perfomance:
+    sum = sum + g
+print(sum/4)
+if sum > 4.0:
+    print("аттестован")
+else:
+    print("не аттестован")
+
+for i in Student.perfomance:
+    sum > 4.0
+    print(sum)
+    '''
+'''
+class train:
+   
+    
+    def __init__(self, n,t ):
+        self.number = n
+        self.timeout = t
+train1 = train([125],"timeout")
+train2 = train([110],"timeout")
+listT = (train1,train2)
+k = int(input("введите номер"))
+for i in listT:
+    if k ==i.n:
+        print(i.n,i.t)
+        '''
