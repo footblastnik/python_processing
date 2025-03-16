@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport"  content="width=device-width,initial-scale=1.0">
+    <title>Habr</title>
+</head>
+<body> 
+    <div align=center> 
+       <header>
+           <h1>Школа 220 </h1>
+       </header>
+       <section>
+           <h2> <span style="colour:Blue"> Навигация по ссылкам на сайт</span></h2>
+           <p>Тут вы можете найти все ссылки на интересующую информацию</p>
+           <p>Перейдите на  <a HREF="https://школа220.рф/uchenikam/regionalnaya-innovatsionnaya-ploshchadka">наш</a> сайт</p>
+       </section>
+       <footer><strong>@ 2025 сайт школы</strong></footer>
+     </div>
+     <ul type = "disc">
+     <li> o нас 
+     <li> лучшая школа
+     <li> лучшее образование
+     </ul>
+     
+     <ol type = "disc">
+     <li> сведение о школе
+     <li> внешний вид
+     <li> <A HREF = "https://школа220.рф/uchenikam/regionalnaya-innovatsionnaya-ploshchadka">Сайт школы</A>
+     </ol>
+     
+     <A HREF = "https://школа220.рф/#">Школа</A>
+     <nav>
+        <ul>
+            
+            <li><A HREF = "https://pro.firpo.ru/kompetentsii/"></A>
+            <li> <A HREF = "https://edsoo.ru/?ysclid=lmetghefog752832505">Педагоги</A>
+        </ul> 
+         
+     </nav>
+     
+</body>
