@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport"  content="width=device-width,initial-scale=1.0">
+    <title>Habr</title>
+</head>
+
+<body> 
+    
+ <header> 
+    <h1>Habr</h1> 
+    <nav>
+        <ul>
+            <li><a href="#upload">Загрузить видео</a></li>
+            <li><a href="https://vk.com/video-205805412_456250735">видео</a></li>
+        </ul>
+    </nav> 
+ </header>
+    <iframe height="315" width="540"src="https://vk.com/video-38981650_162678669"frameborder="0"allowfullscreen></iframe>
+    <h1 align = "center" style = "color:rgb(240, 215, 228)">ZAGALOVOK</h1>
+    <table border="1" align="center"bgcolor="green">
+     <tr align="center" valign="middle"bgcolor="pink">
+        <th>любимое мороженое</th>
+        <th>не любимое мороженое</th>
+     </tr>  
+     <tr align="center" valign="middle">
+        <td>клубничное</td>
+        <td>шоколадное</td>
+     </tr>  
+    </table>
