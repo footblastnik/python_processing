@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport"  content="width=device-width,initial-scale=1.0">
+    <title>Habr</title>
+</head>
+<body> 
+    <div align=center > 
+        <header> 
+            <h1><span style="color:rgb(255, 0, 0)">МК СИБИРЬ</span> </h1>
+        </header> 
+    </div>
+    <section>
+        <h2> <span style="color:Blue"> Навигация меню</span></h2>
+        <p>Тут вы можете найти все ссылки на ресторан</p>
+        <p>Перейдите на  <a HREF="https://школа220.рф/uchenikam/regionalnaya-innovatsionnaya-ploshchadka">ресторан</a> сайт</p>
+    </section>
+    <div>
+        <section>
+            <h2> <span style="color:Blue"> Apple Crisp</span></h2>
+            <p><img scr="яблоко.jpg" align left Height =100 Width = 150 alt="традиционный американский десерт, который представляет собой нечто среднее между пирогом и фруктовой запеканкой"></p>
+           
+        </section>
+    </div>
+
+</body>
