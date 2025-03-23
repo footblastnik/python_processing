@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport"  content="width=device-width,initial-scale=1.0">
+    <title>Habr</title>
+</head>
+<body> 
+    <form action="/sumbit" method="POST">
+        <label for="name">Пароль:</label><br>
+        <input type="password" id="name" name="name" required><br><br>
+
+        <label for="name">Электронная почта:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <div align=center> 
+            <label for="gender">Пол:</label><br>
+            <input type="radio" id="male" name="gender" value = "male"required>
+            <label for="male">Мужской</label><br>
+            <input type="radio" id="female" name="gender" value = "female">
+            <label for="female">Женский</label><br><br>
+    </form>
+     
+</body>
