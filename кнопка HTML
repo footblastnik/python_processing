@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norbe</title>
+</head>
+<body>
+    <h1>Мышка Игровая</h1>
+    <button onclick="btn_click()">Click Me</button>
+    <script>
+        let clicks = 0;
+        function btn_click(){
+            console.log("Clicked",++clicks);
+        }
+        
+
+    </script>
