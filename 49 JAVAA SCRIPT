@@ -1,0 +1,11 @@
+//console.log("greet");
+//const name = 'Никита';
+///const greet = 'Привет,мое имя ${name}';
+//name = 'Nikita!' 
+//alert("${greet}");
+//const message = "Hello";
+//let value = prompt('Enter your name');
+//console.log(value);
+//const first = '25';
+//const second = '5';
+//console.log(+first +number(second));
