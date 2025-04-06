@@ -1,0 +1,22 @@
+//let year = prompt("пароль")
+//if(year == '9833asGH')alert('вы правы!')
+//else
+//alert('а вот и неправильно')
+
+//const str = 'Welcome';
+//console.log(str[str.length -1])
+
+//let  right;
+//let age = prompt('сколько вам лет?'); 
+//if (age > 18){
+
+  //right = true;
+//}else{
+  //right = false;
+//}
+  //alert(right);
+
+  //x = Number(prompt('')) 
+  // if(x > 20)console.log(x * 2)
+  //else
+  //console.log(20)
