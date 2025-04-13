@@ -1,0 +1,35 @@
+// function res() {
+//     let van1 = Number(prompt(''));
+//     let van2 = Number(prompt(''));
+//     let sum = van1 + van2
+//     console.log(sum)
+// }
+    
+// res()
+// res()
+
+// function res() {
+//     let van1 = Number(prompt(''));
+//     let van2 = Number(prompt(''));
+//     if (van1>van2)console.log(van1)
+//     else
+// console.log(van2)
+// }
+    
+// res()
+
+
+// let i = 1;
+// while(i < 8) {
+//     console.log(i);
+//     i++;
+
+// }
+
+// let userInput;
+
+do{
+    userInput = prompt('Введите число'); 
+} while (isNaN(userInput));
+console.log('введено число:'+ userInput);
+  
