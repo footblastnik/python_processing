@@ -1,0 +1,35 @@
+<!-- <script src ="script.js" defer></script> -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport"  content="width=device-width,initial-scale=1.0">
+    <title>Habr</title>
+</head>
+<body id="vse"> 
+    <!-- <ctx id ="fillstyle"span style="color:rgb(0, 255, 21)"> Навигация по ссылкам на сайт</span></ctx> -->
+    <button id ="myButton">Наведи на меня</button>
+    <p id = "text" span style="color:Blue"> Навигация по ссылкам на сайт</span></p>
+
+
+
+
+
+
+
+    <script>
+         document.getElementById('text');
+        addEventListener('click',function(){
+            document.getElementById('vse').style.background = "black";
+
+        });
+        document.getElementById('text');
+        addEventListener('dblclick',function(){
+            document.getElementById('vse').style.background = "white";
+        });
+
+        
+    </script>
+    
+</body>
+</html>
