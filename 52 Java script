@@ -1,0 +1,24 @@
+///<button id ="myButton">Нажми на меня</button>
+    //<script>
+       // const button = document.getElementById('myButton');
+        //button.addEventListener('click',function(){
+          //  alert('Кнопка нажата');
+       // });
+        
+    //</script>
+    
+    
+    ///<button id ="myButton">Наведи на меня</button>
+    
+   // <script>
+        // document.getElementById('myButton');
+       // addEventListener('mouseover',function(){
+            //document.getElementById('myButton').style//.backgroundColor = "green";
+       // });
+         //document.getElementById('myButton');
+        //addEventListener('mouseout',function(){
+           // document.getElementById('myButton').style//.backgroundColor = "red";
+       // });
+
+        
+   // </script>
