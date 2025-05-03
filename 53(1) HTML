@@ -1,0 +1,29 @@
+<button data-message ="showMessage()">нажми на меня</button>
+    
+
+
+
+
+
+
+
+    <script>
+        function showMessage() {
+            console.log('привет');
+        }
+        
+        
+        
+        2
+        
+       <h1>Кликните в любом месту страницы</h1>
+    <p>После клика откройте консоль браузера</p>
+    
+
+
+    <script>
+        document.addEventListener('click',function(event) {
+            console.log(event);
+        });
+       
+    </script> 
