@@ -1,0 +1,63 @@
+script src ="script.js" defer></script> -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport"  content="width=device-width,initial-scale=1.0">
+    <title>Habr</title>
+</head>
+<body> 
+    
+     
+    <div align=center > 
+        <header> 
+            <h1 id = "zagalovak"><span style="color:rgba(0, 255, 42, 0)">СИБ ИНДУСТРИЯ</span> </h1>
+        </header> 
+    </div>
+    <section>
+        <h2 id = "navigac"> <span style="color:rgba(255, 0, 0, 0)">Тут вы можете найти все ссылки на ресторан:</span></h2>
+       <nav>
+         <ul>
+            <il><a href="#o nas">О нас</a></il>
+            <il><a href="#kontact">Контакты</a></il>
+         </ul>
+       </nav>
+       
+    </section>
+    <div>
+        <section>
+            <h2> <span style="color:Blue"> Apple Crisp</span></h2>
+            <p><img scr="яблоко.jpg" align left Height =100 Width = 150 alt="традиционный американский десерт, который представляет собой нечто среднее между пирогом и фруктовой запеканкой"></p>
+           
+        </section>
+    </div>
+
+
+   
+    <script>
+       
+       const h1 = document.getElementById('navigac');
+        h1.addEventListener('mouseover',function(){
+            document.getElementById('navigac').style.backgroundColor = "green";
+        });   
+       document.getElementById('navigac');
+        addEventListener('mouseout',function(){
+            document.getElementById('navigac').style.backgroundColor = "white";
+        });
+
+        const h2 = document.getElementById('zagalovak');
+        h2.addEventListener('mouseover',function(){
+            document.getElementById('zagalovak').style.backgroundColor = "green";
+        });
+       document.getElementById('zagalovak');
+        addEventListener('mouseout',function(){
+            document.getElementById('zagalovak').style.backgroundColor = "white";
+        });
+
+        
+
+       
+   </script>
+   
+    
+   </body>
+</html>
