@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habr</title>
+    <link rel="icon" href="kokoko.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="gugu.css">
+    <script src="huhuhu.js" defer></script>
+    
+    <style>
+        body{background-image: url("https://images.wallpaperscraft.ru/image/single/gradient_raznotsvetnyj_goluboj_187408_1920x1080.jpg");}
+    </style>
+</head>
+<body> 
+    <header>
+     <div class="container">
+            <div class="logo">
+                <a href="#">Habr</a>
+            </div>
+            <nav>
+                <a href="gggggg.html">Главная</a>
+                <a href="#">О нас</a>
+                <a href="#">Услуги</a>
+                <a href="#">Контакты</a>
+                <form action="uuu.html" target="blank">
+                <button>Войти</button>
+                </form>
+                <form action="oooooo.html" target="blank">
+                <button>Зарегистрироваться</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <div class="chat-container">
+        <div class="chat-header">Простой чат</div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">Привет! Как я могу вам помочь?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Введите сообщение..." autocomplete="off">
+            <button class="send-button">Отправить</button>
+        </div>
+    </div>
+
+
+    <main>
+        <section>
+            <h1>Добро пожаловать!</h1>
+            
+        </section>
+    </main>
+
+        <h1 align="center" class="boy"><strong>Игры</strong></h1>
+        <div class="image-container">
+            <div>
+    <p><strong>Fortnite</strong></p> 
+    <li><a href="pppp.html">аккаунты</a></li>
+    </div>
+    <div>
+    <p><strong>ГTA</strong></p>
+    <li><a href="yyyyy.html">аккаунты</a></li>
+    </div>
+    <div>
+    <p><strong> Brawl Stars</strong></p>
+    <li><a href="kkkk.html">аккаунты</a></li>
+    </div>
+    </div>
+    <h3 align="center" class="roy"><strong>Что же это за сайт?</strong></h3>
+    <p><strong>Habr- это онлайн-магазин, специализирующийся на продаже игр для Steam и других цифровых продуктов. Платформа предоставляет возможность покупки ключей для популярных игр, программного обеспечения и различного цифрового контента. Habr объединяет множество продавцов, что позволяет пользователям выбирать из большого ассортимента товаров по привлекательным ценам. Однако покупатели должны быть внимательны, так как существует риск нарваться на мошенников. Здесь вы можете как купить что-то так и продать что-то.На нашем сайте каждый день проходят различные розыгрыши, распродажи и много всего интересного.  </strong></p>
+
+    <form action="http://zozfzffffaf.tilda.ws
+     " target="_blank">
+        <button class="uouo">Корзина и специальные предложения.</button>
+        </form>
+
+</body>
+<footer>
+    <p align="center" class="toy"> <strong>Социальные сети</strong></p>
+    <div class="image-container">
+        <div>
+<p><strong>Youtube</strong></p> 
+<li><a href="https://www.youtube.com/account_advancedt">аккаунты</a></li>
+</div>
+<div>
+<p><strong> VK</strong></p>
+<li><a href="https://vk.com/feed">click</a></li>
+</div>
+<div>
+<p><strong> Tik Tok</strong></p>
+<li><a href="https://www.tiktok.com/explore?ysclid=m46gzaurae311627754">click</a></li>
+</div>
+
+
+</html>
