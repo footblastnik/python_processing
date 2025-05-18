@@ -1,0 +1,81 @@
+<!-- <script src ="script.js" defer></script> -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport"  content="width=device-width,initial-scale=1.0">
+    <title>Habr</title>
+    <style>
+        body{background-image: url("https://t4.ftcdn.net/jpg/02/22/15/93/360_F_222159309_r17sMh7YurdVFbpkqPI9QZ6PwaJFySlg.jpg");}
+
+        button{
+            padding: 20px;
+            background-color: rgb(6, 85, 16);
+            color: rgb(0, 255, 0);
+            border-top-left-radius: 20px; border-top-right-radius: 20px; 
+        }
+        img{
+            margin-left: 30%;
+        }
+    </style>
+
+</head>
+<body> 
+    
+     
+    <div align=center > 
+        <header> 
+            <h1 id = "zagalovak"><span style="color:rgba(8, 8, 8, 0.925)">СИБ ИНДУСТРИЯ</span> </h1>
+        </header> 
+    </div >
+    <section align=center>
+        <h2 id = "navigac"> <span style="color:rgba(0, 0, 0, 0.952)">Тут вы можете найти ссылку на строительную компанию</span> </h2>
+            <nav>
+                
+                <form action="http://feewf.tilda.ws/sibindustry" target="blank">
+                <button>Войти на сайт строительной компании</button>
+                </form>
+                
+            </nav>        
+    
+       
+    </section>
+   
+    <div>
+        <section >
+            
+            <p><img src="https://i.pinimg.com/originals/89/55/6c/89556c05c7164b828aa0ced55d094826.jpg"alt="стройка" align = center Height =300 Width = 550 ></p>
+           
+        </section>
+
+    </div>
+
+
+   
+    <script>
+       
+       const h1 = document.getElementById('navigac');
+        h1.addEventListener('mouseover',function(){
+            document.getElementById('navigac').style.backgroundColor = "white";
+        });   
+       document.getElementById('navigac');
+        addEventListener('mouseout',function(){
+            document.getElementById('navigac').style.backgroundColor = "green";
+        });
+
+        const h2 = document.getElementById('zagalovak');
+        h2.addEventListener('mouseover',function(){
+            document.getElementById('zagalovak').style.backgroundColor = "white";
+        });
+       document.getElementById('zagalovak');
+        addEventListener('mouseout',function(){
+            document.getElementById('zagalovak').style.backgroundColor = "green";
+        });
+
+        
+
+       
+   </script>
+   
+    
+   </body>
+</html>
